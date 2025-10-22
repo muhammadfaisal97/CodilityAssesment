@@ -1,101 +1,84 @@
-<<<<<<< HEAD
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+🛍️ Codility Assessment – React Native Developer
 
-# Getting Started
+Requirements: 
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+● Home Screen: 
+  Display a list of products using a static JSON file or a public 
+  API such as https://fakestoreapi.com/. 
+  Each product card should show an image, title, and price. 
+● Search & Filter:
+  Add a search bar to filter products by name. 
+  Optional: implement category-based filtering. 
+● Favorites Feature: 
+  Allow users to mark/unmark products as “Favorite”. 
+  Favorites should persist locally (use AsyncStorage or similar). 
+● Product Details Screen:
+  On clicking a product, navigate to a detailed view showing full 
+  description and image. 
+● UI/UX Design & Responsiveness: 
+  Clean, responsive layout compatible with both Android and iOS. 
+  Use Flexbox, Styled Components, or Tailwind React Native for styling. 
+● Code Quality & Architecture: 
+  Use functional components and React Hooks. 
+  Maintain proper folder structure, reusable components, and clean readable code. 
 
-## Step 1: Start Metro
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+🚀 Features Implemented
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+● Home Screen: 
+  Displays a list of products with an image, title, and price fetched from Fake Store API.
 
-```sh
-# Using npm
-npm start
+● Search & Filter: 
+  Includes a search bar to filter products by name and optional category filtering.
 
-# OR using Yarn
-yarn start
-```
+● Favorites: 
+  Users can mark/unmark items as “Favorite”, with persistence using AsyncStorage.
 
-## Step 2: Build and run your app
+● Product Details Screen: 
+  Shows detailed information including full description and product image.
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+● UI/UX & Responsiveness: 
+  Designed using Flexbox for responsive layouts that work across Android and iOS.
 
-### Android
+● Code Quality & Architecture: 
+  Implemented with functional components, React Hooks, and a clean folder structure.
 
-```sh
-# Using npm
+⚙️ Setup Instructions
+
+Follow these steps to set up and run the project locally:
+
+1️⃣ Clone the Repository
+git clone https://github.com/muhammadfaisal97/CodilityAssesment.git
+cd CodilityAssesment
+
+2️⃣ Install Dependencies
+npm install
+# or
+yarn install
+
+3️⃣ Run on Android
 npm run android
-
-# OR using Yarn
+# or
 yarn android
-```
 
-### iOS
+open project in Android Studio
+start emulater
+run project 
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
+4️⃣ Run on iOS (Mac only)
+pod install
 npm run ios
-
-# OR using Yarn
+# or
 yarn ios
-```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+open project in XCode
+start emulater
+run project 
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+🧪 Running Tests
 
-## Step 3: Modify your app
+To run tests (if available), use the following command:
 
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
-=======
-# CodilityAssesment
->>>>>>> a7bbc3c53159f05118710cb5e052c2965535603e
+npm test
+# or
+yarn test
